@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url('fonts/Helvetica-Light.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: lightgrey;
+}
+
+@media (min-width:980px) {
+    .container {
+        width: 77.77%;
+        display: flex;
+        margin-left: 11.11%;
+    }
+    header {
+        color: #354463;
+        font-family: Helvetica-Light;
+        display: flex;
+        height: 8rem;
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+    }
+    .topic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        text-align: left;
+        font: Bold 1.375rem/1.75rem Helvetica;
+        letter-spacing: 0;
+    }
+    h5 {
+        text-align: left;
+        font: normal 1rem/1.5rem 'Helvetica-Light';
+        letter-spacing: -0.16px;
+    }
+    nav {
+        width: 77.77%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navitems {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h3 {
+        font-size: 1.375rem;
+    }
+    .donatecolored {
+        margin-top: 2.5rem;
+        width: 23%;
+        height: 3rem;
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 6.25rem;
+    }
+    .donatelink {
+        font: Bold 1.125rem/1.375rem Helvetica;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 0.9375rem;
+    }
+}
+
+@media (min-width:620px) and (max-width:979px) {
+    .container {
+        width: 83.33%;
+        display: flex;
+        margin-left: 8.33%;
+    }
+    header {
+        color: #354463;
+        font-family: Helvetica-Light;
+        display: flex;
+        height: 8rem;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    .topic {
+        margin-top: 1.25rem;
+        margin-bottom: 0px;
+        width: 30%;
+        text-align: left;
+        font: Bold 1.375rem/1.75rem Helvetica;
+        letter-spacing: 0;
+    }
+    h5 {
+        text-align: left;
+        font: normal 1rem/1.5rem 'Helvetica-Light';
+        letter-spacing: -0.16px;
+    }
+    nav {
+        width: 65%;
+        display: flex;
+        height: 1.375rem;
+        flex-direction: row;
+        justify-content: space-between;
+        order: 2;
+    }
+    .navitems {
+        display: flex;
+        margin: 0px;
+    }
+    h3 {
+        font-size: 1.375rem;
+    }
+    .donatecolored {
+        margin-top: 1.25rem;
+        margin-left: 43.2%;
+        width: 26.5%;
+        height: 3rem;
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 6.25rem;
+    }
+    .donatelink {
+        font: Bold 1.125rem/1.375rem Helvetica;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 0.9375rem;
+    }
+}
+
+@media (min-width:376px) and (max-width:619px) {
+    header {
+        color: #354463;
+        font-family: Helvetica-Light;
+        display: flex;
+        height: 12.5rem;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    .container {
+        width: 82.98%;
+        display: flex;
+        margin-left: 8.51%;
+    }
+    .topic {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        text-align: left;
+        font: Bold 1.125rem/1.375rem Helvetica;
+        letter-spacing: 0;
+    }
+    h5 {
+        text-align: left;
+        font: normal 0.875rem/1.25rem 'Helvetica-Light';
+        letter-spacing: -0.16px;
+    }
+    nav {
+        width: 50%;
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .navitems {
+        margin: 0px;
+    }
+    h3 {
+        font-size: 1.375rem;
+    }
+    .donatecolored {
+        order: 2;
+        margin-top: 2.5rem;
+        margin-right: 11.11%;
+        width: 23%;
+        height: 3rem;
+        background: #C1F7D5 0% 0% no-repeat padding-box;
+        border-radius: 6.25rem;
+    }
+    .donatelink {
+        font: Bold 1.125rem/1.375rem Helvetica;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 0.9375rem;
+    }
+}
