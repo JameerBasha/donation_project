@@ -9,16 +9,16 @@
 
 body {
     margin: 0px;
-    background-color: lightgrey;
+    background: white;
 }
 
 @media (min-width:980px) {
-    .container {
+    .mid-container {
         width: 77.77%;
         display: flex;
         margin-left: 11.11%;
     }
-    header {
+    .header-container {
         color: #354463;
         font-family: Helvetica-Light;
         display: flex;
@@ -36,47 +36,105 @@ body {
         font: Bold 1.375rem/1.75rem Helvetica;
         letter-spacing: 0;
     }
-    h5 {
-        text-align: left;
-        font: normal 1rem/1.5rem 'Helvetica-Light';
-        letter-spacing: -0.16px;
-    }
-    nav {
+    .top-navigation {
         width: 77.77%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .navitems {
+    .navigation-items {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: left;
+        font: normal 1rem/1.5rem 'Helvetica-Light';
+        letter-spacing: -0.16px;
     }
-    h3 {
-        font-size: 1.375rem;
-    }
-    .donatecolored {
+    .donate-today-container {
         margin-top: 2.5rem;
         width: 23%;
         height: 3rem;
         background: #C1F7D5 0% 0% no-repeat padding-box;
         border-radius: 6.25rem;
     }
-    .donatelink {
+    .donate-today {
         font: Bold 1.125rem/1.375rem Helvetica;
         letter-spacing: 0;
         text-align: center;
         margin-top: 0.9375rem;
+        background: transparent;
+    }
+    .main-page {
+        margin-top: 0rem;
+        display: flex;
+        z-index: 1;
+    }
+    .the-issue {
+        margin-top: 8rem;
+        height: 25rem;
+        width: 48.48%;
+        background: white;
+        /*  */
+        font: Bold calc(0.7rem + 1.9vw)/3.5rem Helvetica;
+    }
+    /* .the-issue {
+        margin-top: 8rem;
+        height: 25rem;
+        width: 34rem;
+        background: white;
+        font: Bold 2.75rem/3.5rem Helvetica;
+    } */
+    .the-issue-box {
+        margin-left: 4.6%;
+        margin-top: 7rem;
+        position: absolute;
+        text-align: center;
+        padding-top: 0.875rem;
+        width: 10.7%;
+        height: 2.5rem;
+        background: #354463;
+        color: white;
+        font: normal 0.875rem/1.0625rem Helvetica;
+        letter-spacing: 0.56px;
+    }
+    .the-issue-content {
+        margin-top: 4.75rem;
+        margin-left: 11.76%;
+        margin-right: 11.76%;
+        margin-bottom: 7.4375rem;
+        text-align: left;
+        letter-spacing: 0;
+        color: #354463;
+    }
+    .read-more-link {
+        margin-top: 1.15rem;
+        text-decoration: underline;
+        font: normal 1rem/1.5rem Helvetica;
+        letter-spacing: -0.16px;
+    }
+    .stop-climate-change-image {
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 8rem;
+    }
+    .annie-sparatt-image {
+        margin: 0px;
+        object-fit: cover;
+        width: 100%;
+        position: absolute;
+        height: 43rem;
+        background: #354463 0% 0% no-repeat padding-box;
+        z-index: -10;
     }
 }
 
 @media (min-width:620px) and (max-width:979px) {
-    .container {
+    .mid-container {
         width: 83.33%;
         display: flex;
         margin-left: 8.33%;
     }
-    header {
+    .header-container {
         color: #354463;
         font-family: Helvetica-Light;
         display: flex;
@@ -94,12 +152,7 @@ body {
         font: Bold 1.375rem/1.75rem Helvetica;
         letter-spacing: 0;
     }
-    h5 {
-        text-align: left;
-        font: normal 1rem/1.5rem 'Helvetica-Light';
-        letter-spacing: -0.16px;
-    }
-    nav {
+    .top-navigation {
         width: 65%;
         display: flex;
         height: 1.375rem;
@@ -107,14 +160,14 @@ body {
         justify-content: space-between;
         order: 2;
     }
-    .navitems {
+    .navigation-items {
+        text-align: left;
+        font: normal 1rem/1.5rem 'Helvetica-Light';
+        letter-spacing: -0.16px;
         display: flex;
         margin: 0px;
     }
-    h3 {
-        font-size: 1.375rem;
-    }
-    .donatecolored {
+    .donate-today-container {
         margin-top: 1.25rem;
         margin-left: 43.2%;
         width: 26.5%;
@@ -122,16 +175,66 @@ body {
         background: #C1F7D5 0% 0% no-repeat padding-box;
         border-radius: 6.25rem;
     }
-    .donatelink {
+    .donate-today {
         font: Bold 1.125rem/1.375rem Helvetica;
         letter-spacing: 0;
         text-align: center;
         margin-top: 0.9375rem;
     }
+    .main-page {
+        margin-top: 0rem;
+        display: flex;
+        z-index: 1;
+    }
+    .the-issue {
+        margin-top: 8rem;
+        height: 25rem;
+        width: 48.48%;
+        background: white;
+        font: Bold 2.75rem/3.5rem Helvetica;
+    }
+    .the-issue-box {
+        margin-left: 4.6%;
+        margin-top: 7rem;
+        position: absolute;
+        text-align: center;
+        padding-top: 0.875rem;
+        width: 10.7%;
+        height: 2.5rem;
+        background: #354463;
+        color: white;
+        font: normal 0.875rem/1.0625rem Helvetica;
+        letter-spacing: 0.56px;
+    }
+    .the-issue-content {
+        margin-top: 4.75rem;
+        margin-left: 11.76%;
+        margin-right: 11.76%;
+        margin-bottom: 7.4375rem;
+        text-align: left;
+        letter-spacing: 0;
+        color: #354463;
+    }
+    .read-more-link {
+        margin-top: 1.15rem;
+        text-decoration: underline;
+        font: normal 1rem/1.5rem Helvetica;
+        letter-spacing: -0.16px;
+    }
+    .stop-climate-change-image {
+        position: absolute;
+        margin-left: 11.76%;
+        margin-top: 5.5625rem;
+    }
 }
 
 @media (min-width:376px) and (max-width:619px) {
-    header {
+    .mid-container {
+        width: 82.98%;
+        display: flex;
+        margin-left: 8.51%;
+    }
+    .header-container {
         color: #354463;
         font-family: Helvetica-Light;
         display: flex;
@@ -141,12 +244,8 @@ body {
         flex-wrap: wrap;
         background-color: white;
     }
-    .container {
-        width: 82.98%;
-        display: flex;
-        margin-left: 8.51%;
-    }
     .topic {
+        margin-top: 2.8125rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -155,37 +254,33 @@ body {
         font: Bold 1.125rem/1.375rem Helvetica;
         letter-spacing: 0;
     }
-    h5 {
+    .top-navigation {
+        padding-left: 1rem;
+        margin-top: 0.8rem;
+        width: 50%;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navigation-items {
+        margin-top: 0.75rem;
+        margin-bottom: 0rem;
         text-align: left;
         font: normal 0.875rem/1.25rem 'Helvetica-Light';
         letter-spacing: -0.16px;
     }
-    nav {
-        width: 50%;
-        height: 8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .navitems {
-        margin: 0px;
-    }
-    h3 {
-        font-size: 1.375rem;
-    }
-    .donatecolored {
+    .donate-today-container {
         order: 2;
-        margin-top: 2.5rem;
-        margin-right: 11.11%;
-        width: 23%;
-        height: 3rem;
+        width: 100%;
+        height: 2.5rem;
         background: #C1F7D5 0% 0% no-repeat padding-box;
         border-radius: 6.25rem;
     }
-    .donatelink {
+    .donate-today {
         font: Bold 1.125rem/1.375rem Helvetica;
         letter-spacing: 0;
         text-align: center;
-        margin-top: 0.9375rem;
+        margin-top: 0.5rem;
     }
 }
