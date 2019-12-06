@@ -3,11 +3,6 @@
     src: url('fonts/Helvetica-Light.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'Flood';
-    src: url('fonts/Flood.ttf') format('truetype');
-}
-
 * {
     box-sizing: border-box;
 }
@@ -16,6 +11,15 @@ body {
     margin: 0px;
     background: white;
     height: 100%;
+}
+
+.donate-today-container:hover,
+.read-more:hover {
+    box-shadow: 3px 3px;
+}
+
+.read-more-link:hover {
+    text-shadow: 1px 1px;
 }
 
 @media (min-width:980px) {
@@ -739,7 +743,7 @@ body {
         margin-top: 58rem;
         position: absolute;
         background: #354463;
-        height: 67rem;
+        height: 130rem;
         width: 100%;
         z-index: -1;
     }
@@ -780,7 +784,8 @@ body {
     .individual-goals-image {
         display: inline-block;
         position: relative;
-        margin-left: 10%;
+        align-self: center;
+        top: -2rem;
         width: 80%;
     }
     .what-we-do-flex-containers {
@@ -792,22 +797,24 @@ body {
     .individual-goals {
         width: 100%;
         align-self: flex-start;
+        text-align: center;
         background: white;
-        margin-right: 4.96%;
+        /* margin-right: 4.96%; */
         height: 100%;
+        margin-bottom: 4rem;
     }
     .individual-goals-topics {
-        padding-left: 2rem;
-        margin-top: -2.5rem;
-        font: Bold calc(1.05rem + 1vw)/2.25rem Helvetica;
+        margin-top: -1rem;
+        font: Bold 18px/22px Helvetica;
+        letter-spacing: 0;
         letter-spacing: 0;
         color: #354463;
     }
     .individual-goal-content {
+        font: normal 0.875rem/1.25rem Helvetica-Light;
         padding-left: 2rem;
         padding-right: 2rem;
-        font: normal 1rem/1.5rem Helvetica-Light;
-        letter-spacing: -0.16px;
+        letter-spacing: -0.14px;
         margin-bottom: -10px;
         color: #354463;
     }
@@ -816,14 +823,14 @@ body {
         color: #354463;
         letter-spacing: 0;
         text-align: center;
+        align-self: center;
         align-content: center;
-        margin-top: 10%;
-        margin-bottom: 10%;
         padding-top: 0.9375rem;
-        margin-left: 10%;
         width: 50%;
+        margin-left: 25%;
         height: 3rem;
         background: #C1F7D5 0% 0% no-repeat padding-box;
         border-radius: 6.25rem;
+        margin-bottom: 4rem;
     }
 }
