@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Helvetica-Light';
-    src: url('fonts/Helvetica-Light.woff') format('woff');
+    src: url('assets/fonts/Helvetica-Light.woff') format('woff');
 }
 
 * {
@@ -130,7 +130,7 @@ body {
         margin-top: 8rem;
     }
     .annie-sparatt-image {
-        background: transparent url("assets/home/annie-spratt-135307-unsplash.png") 0% 0% no-repeat padding-box;
+        background: transparent url("assets/images/annie-spratt-135307-unsplash.png") 0% 0% no-repeat padding-box;
         margin: 0px;
         background-size: cover;
         position: absolute;
@@ -381,7 +381,7 @@ body {
         margin-top: 4.3125rem;
     }
     .annie-sparatt-image {
-        background: transparent url("assets/home/annie-spratt-small.png") 0% 0% no-repeat padding-box;
+        background: transparent url("assets/images/annie-spratt-small.png") 0% 0% no-repeat padding-box;
         margin: 0px;
         background-size: cover;
         position: absolute;
@@ -666,7 +666,7 @@ body {
         margin-top: 2rem;
     }
     .annie-sparatt-image {
-        background: transparent url("assets/home/annie-spratt-mobile.png") 0% 0% no-repeat padding-box;
+        background: transparent url("assets/images/annie-spratt-mobile.png") 0% 0% no-repeat padding-box;
         margin: 0px;
         background-size: cover;
         background-position: 100%;
